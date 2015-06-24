@@ -45,13 +45,33 @@
         android:visibility="gone"
         android:alpha="0.3"/>
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/started_circle"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/progress_bar_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:visibility="gone"/>
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/progress_bar_started"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_starting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="启动中"
+            android:textSize="13sp"
+            android:textColor="#ff0000"/>
+
+
+    </RelativeLayout>
+
+
+
 
 
 
